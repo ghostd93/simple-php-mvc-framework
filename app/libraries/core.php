@@ -4,8 +4,8 @@
  * Creates URL & loads core controller
  */
 
- class Core {
-     
+class Core {
+    
     protected $currentController = 'PagesController';
     protected $currentMethod = 'index';
     protected $params = [];
@@ -51,4 +51,4 @@
             return $url;
         }
     }
- }
+}

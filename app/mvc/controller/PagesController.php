@@ -1,17 +1,13 @@
 <?php 
 
-class PagesController {
+class PagesController extends Controller{
 
     public function __construct(){
         
     }
 
     public function index(){
-        
-    }
-
-    public function save($id = null){
-        echo $id;
+        $this->view('hello');
     }
 
 }
