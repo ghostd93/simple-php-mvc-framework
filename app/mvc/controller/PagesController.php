@@ -3,7 +3,7 @@
 class PagesController extends Controller{
 
     public function __construct(){
-        
+        $this->testModel = $this->model('Test');
     }
 
     public function index(){

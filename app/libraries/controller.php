@@ -8,7 +8,7 @@ class Controller {
     // include model file and instatiate model class
     public function model($model){
 
-        require_once '../app/mvc/model' . $model . '.php';
+        require_once '../app/mvc/model/' . $model . '.php';
         return new $model();
 
     }
