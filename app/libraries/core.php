@@ -25,6 +25,15 @@
 
         // instationate controller class
         $this->currentController = new $this->currentController;
+
+        // method mapping
+        if(isset($url[1])){
+            if(method_exists($this->currentController, $url[1])){
+                $this->currentMethod = $url[1];
+            }
+        }
+
+        echo $this->currentMethod;
     }
 
     public function getUrl(){
