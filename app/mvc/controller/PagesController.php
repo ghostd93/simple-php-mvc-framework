@@ -6,6 +6,12 @@ class PagesController {
         
     }
 
-    public function save(){}
+    public function index(){
+        
+    }
+
+    public function save($id = null){
+        echo $id;
+    }
 
 }
